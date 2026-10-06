@@ -7,8 +7,8 @@ SNK NeoGeo Pocket的单文件 SQLite 保存库。公开的 Catalog 只含元数�
 | 项目 | 数值 |
 | --- | --- |
 | 原始大小 | 源 ZIP 14 个，5.3 MiB（No-Intro 13 个，RetroAchievements 集合 1 个）；解压后 ROM 14 个，13.7 MiB |
-| 入库后大小 | 完整库 6.0 MiB；公开 Catalog 1.6 MiB（不含 ROM 数据） |
-| 比例 | 完整库为原 ZIP 的 114.6%，为解压后 ROM 总量的 44.1% |
+| 入库后大小 | 完整库 6.2 MiB；公开 Catalog 1.7 MiB（不含 ROM 数据） |
+| 比例 | 完整库为原 ZIP 的 117.0%，为解压后 ROM 总量的 45.0% |
 | 使用的技术 | 存储 v4：128 KiB 块按 SHA256 去重，按 No-Intro 游戏族顺序装入最大 32 MiB 的 LZMA2 实体组（字典 32 MiB）；逐块 SHA256、逐对象 CRC32／MD5／SHA1／SHA256 校验；源 ZIP 由 TorrentZip 配方逐字节重建 |
 | 导出性能 | Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz，空闲负载，Python 3.14.4，含全部校验。按最新 DAT 整套导出（`export_set.py`，13 个文件，逐个按 DAT 哈希校验）：29.5 MiB/s，平均 30 毫秒／个；单个文件冷缓存（每次清空缓存，需解压所在组的前段）：ROM 平均 0.091 秒，TorrentZip 平均 0.186 秒 |
 

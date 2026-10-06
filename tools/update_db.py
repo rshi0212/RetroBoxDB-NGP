@@ -28,14 +28,14 @@ RA_FOLDERS = {'nes': ('RA - Nintendo Entertainment System', 'RA - Nintendo Famic
               # images (FDS conversions, pirate ports): each side imports both folders. Satellaview .bs files are in the RA SNES set.
               'fds': ('RA - Nintendo Famicom Disk System', 'RA - Nintendo Entertainment System'),
               'satellaview': ('RA - Super Nintendo Entertainment System',),
-              'sms': ('RA - Sega Master System',), '32x': ('RA - Sega 32X',), 'pokemini': ('RA - Nintendo Pokemon Mini',),
+              'mastersystem': ('RA - Sega Master System',), 'sega32x': ('RA - Sega 32X',), 'pokemini': ('RA - Nintendo Pokemon Mini',),
               # One RA set each for WonderSwan + Color and NeoGeo Pocket + Color: each side imports it and skips the other's files.
-              'ws': ('RA - WonderSwan',), 'wsc': ('RA - WonderSwan',), 'ngp': ('RA - SNK Neo Geo Pocket',), 'ngpc': ('RA - SNK Neo Geo Pocket',)}
+              'wswan': ('RA - WonderSwan',), 'wswanc': ('RA - WonderSwan',), 'ngp': ('RA - SNK Neo Geo Pocket',), 'ngpc': ('RA - SNK Neo Geo Pocket',)}
 # Files of another platform found in a folder outside this platform's No-Intro set are skipped and listed in the
 # report: FDS images belong to the FDS database, not NES; Satellaview (BS-X) .bs files to the Satellaview database,
 # not SNES; cartridge files (.nes, .sfc ...) in an RA FDS or SNES folder belong to NES or SNES.
 OTHER_PLATFORM_EXT = {'nes': {'.fds', '.qd'}, 'fds': {'.nes', '.unf', '.unif', '.nsf'}, 'snes': {'.bs'},
-                      'satellaview': {'.sfc', '.smc', '.swc', '.fig'}, 'ws': {'.wsc'}, 'wsc': {'.ws'}, 'ngp': {'.ngc'}, 'ngpc': {'.ngp'}}
+                      'satellaview': {'.sfc', '.smc', '.swc', '.fig'}, 'wswan': {'.wsc'}, 'wswanc': {'.ws'}, 'ngp': {'.ngc'}, 'ngpc': {'.ngp'}}
 
 
 def log(*a): print(time.strftime('%H:%M:%S'), *a, flush=True)

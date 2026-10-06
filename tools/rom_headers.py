@@ -524,4 +524,4 @@ def parse_pokemini(data):
 
 
 PARSERS = {'snes': parse_snes, 'megadrive': parse_md, 'gb': parse_gb, 'gbc': parse_gb, 'gba': parse_gba, 'fds': parse_fds, 'satellaview': parse_bsx,
-           'sms': parse_sms, '32x': parse_32x, 'ws': parse_ws, 'wsc': parse_ws, 'ngp': parse_ngp, 'ngpc': parse_ngp, 'pokemini': parse_pokemini}
+           'mastersystem': parse_sms, 'sega32x': parse_32x, 'wswan': parse_ws, 'wswanc': parse_ws, 'ngp': parse_ngp, 'ngpc': parse_ngp, 'pokemini': parse_pokemini}

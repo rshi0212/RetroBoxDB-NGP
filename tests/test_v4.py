@@ -574,7 +574,7 @@ def pokemini_rom(size=1 << 19, seed=73):
 
 class NewCartridgePlatformTests(_Base):
     """Master System, 32X, WonderSwan, NeoGeo Pocket and Pokemon Mini headers (2026-10-06 platforms)."""
-    platform = 'wsc'
+    platform = 'wswanc'
 
     def test_sms_header_checksum_and_variants(self):
         p = engine.parse_sms(sms_rom()); h = p['hardware']
@@ -607,9 +607,31 @@ class NewCartridgePlatformTests(_Base):
         row = self.db.c.execute('SELECT * FROM v_ws_headers').fetchone()
         self.assertEqual((row['format'], row['color'], row['checksum_valid']), ('wsc', 1, 1))
         self.assertEqual(self.db.c.execute('SELECT ra_md5 FROM rom_ra_hashes').fetchone()[0], hashlib.md5(a).hexdigest())
-        self.assertEqual((self.db.solid_limit, self.db.solid_dict), (B.PLATFORMS['wsc']['solid'], B.PLATFORMS['wsc']['dictionary']))
+        self.assertEqual((self.db.solid_limit, self.db.solid_dict), (B.PLATFORMS['wswanc']['solid'], B.PLATFORMS['wswanc']['dictionary']))
         self.assertTrue(self.db.audit(archives=True)['ok'])
-        self.assertEqual(importlib.import_module('import_ra').CONSOLES['wsc'], importlib.import_module('import_ra').CONSOLES['ws'])
+        self.assertEqual(importlib.import_module('import_ra').CONSOLES['wswanc'], importlib.import_module('import_ra').CONSOLES['wswan'])
+
+
+class NormalizeTests(_Base):
+    platform = 'wswan'
+
+    def test_normalize_code_meta_and_idempotence(self):
+        nd = importlib.import_module('normalize_db'); self.db.c.close()
+        c = sqlite3.connect(self.path)
+        with c:  # an old abbreviated code and a stale storage description
+            c.execute("UPDATE platforms SET code='ws'"); c.execute("UPDATE frontend_platforms SET platform_code='ws'")
+            c.execute("UPDATE meta SET value='ws' WHERE key='platform'"); c.execute("UPDATE meta SET value='stale' WHERE key='storage'")
+            c.execute("DELETE FROM meta WHERE key='game_names_extension_version'")
+        c.close()
+        r = nd.normalize(self.path, 'wswan')
+        self.assertEqual(sorted(r['changes']), ['meta.game_names_extension_version', 'meta.platform', 'meta.storage', 'platform_code'])
+        c = sqlite3.connect(self.path); meta = dict(c.execute('SELECT key,value FROM meta'))
+        self.assertEqual((c.execute('SELECT code FROM platforms').fetchone()[0], meta['platform']), ('wswan', 'wswan'))
+        self.assertEqual(meta['storage'], B.storage_text('wswan', B.PLATFORMS['wswan']['block'], B.PLATFORMS['wswan']['solid'], B.PLATFORMS['wswan']['dictionary']))
+        self.assertEqual(c.execute("SELECT count(*) FROM events WHERE action='normalize_db'").fetchone()[0], 1); c.close()
+        self.assertEqual(nd.normalize(self.path)['changes'], {})  # idempotent
+        with self.assertRaises(SystemExit): nd.normalize(self.path, 'ws')  # codes must be Batocera system names
+        self.db = engine.DB(self.path)
 
 
 class RetuneTests(_Base):

@@ -54,13 +54,13 @@ PLATFORMS = {
                            'Nintendo - Family Computer Disk System (QD) (Parent-Clone) (*).zip'),
                 dumplog_glob='Nintendo - Family Computer Disk System (FDS) (Dump Log) (*).zip'),
     # 2026-10-06 platforms; storage values from assessment/data/storage-experiment-<code>.json (whole collections).
-    'sms': dict(label='SMS', name='Sega Master System / Mark III', nointro='Sega - Master System - Mark III', batocera='mastersystem',
+    'mastersystem': dict(label='MasterSystem', name='Sega Master System / Mark III', nointro='Sega - Master System - Mark III', batocera='mastersystem',
                 names=ROOT / 'data' / 'Sega - Master System - Mark III.csv', block=131072, solid=256 * MIB, dictionary=256 * MIB, workers=1),
-    '32x': dict(label='32X', name='Sega 32X', nointro='Sega - 32X', batocera='sega32x',
+    'sega32x': dict(label='32X', name='Sega 32X', nointro='Sega - 32X', batocera='sega32x',
                 names=ROOT / 'data' / 'Sega - 32X.csv', block=32768, solid=256 * MIB, dictionary=256 * MIB, workers=1),
-    'ws': dict(label='WonderSwan', name='Bandai WonderSwan', nointro='Bandai - WonderSwan', batocera='wswan',
+    'wswan': dict(label='WonderSwan', name='Bandai WonderSwan', nointro='Bandai - WonderSwan', batocera='wswan',
                names=ROOT / 'data' / 'Bandai - WonderSwan.csv', block=65536, solid=256 * MIB, dictionary=256 * MIB, workers=1),
-    'wsc': dict(label='WonderSwanColor', name='Bandai WonderSwan Color', nointro='Bandai - WonderSwan Color', batocera='wswanc',
+    'wswanc': dict(label='WonderSwanColor', name='Bandai WonderSwan Color', nointro='Bandai - WonderSwan Color', batocera='wswanc',
                 names=ROOT / 'data' / 'Bandai - WonderSwan Color.csv', block=65536, solid=128 * MIB, dictionary=128 * MIB, workers=2),
     'ngp': dict(label='NGP', name='SNK NeoGeo Pocket', nointro='SNK - NeoGeo Pocket', batocera='ngp',
                 names=ROOT / 'data' / 'SNK - NeoGeo Pocket.csv', block=131072, solid=32 * MIB, dictionary=32 * MIB, workers=1),
@@ -183,6 +183,23 @@ def schema_v4(platform):
     return s + '\n' + (TOOLS / 'schema_v4.sql').read_text()
 
 
+def storage_text(platform, block, cap, dictionary):
+    """meta.storage: the human-readable storage description, always derived from the current parameters."""
+    if platform == 'nes':
+        return (f'SHA256 {block // 1024} KiB block dedup aligned to NES header/PRG/CHR boundaries; 16-byte headers stored separately; '
+                f'family-ordered solid LZMA2 groups up to {cap // MIB} MiB ({dictionary // MIB} MiB dictionary); export-only ZIP plans')
+    return f'SHA256 {block // 1024} KiB block dedup; family-ordered solid LZMA2 groups up to {cap // MIB} MiB ({dictionary // MIB} MiB dictionary); export-only ZIP plans'
+
+
+def scope_text(platform):
+    return f"{PLATFORMS[platform]['name']}; no ROM or source archive deletions"
+
+
+def db_path(platform, root=ROOT):
+    """Populated database of a platform: RetroBoxDB.<label>.sqlite (every platform, NES included)."""
+    return pathlib.Path(root) / f"RetroBoxDB.{PLATFORMS[platform]['label']}.sqlite"
+
+
 def create(path, platform, schema):
     if path.exists(): raise SystemExit(f'Refusing to replace existing {path}')
     c = sqlite3.connect(path)
@@ -192,12 +209,12 @@ def create(path, platform, schema):
     with c:
         c.executemany('INSERT INTO meta VALUES (?,?)', [
             ('name', 'RetroBoxDB'), ('schema_version', '4'), ('created_at', stamp), ('platform', platform),
-            ('scope', f"{PLATFORMS[platform]['name']}; no ROM or source archive deletions"),
+            ('scope', scope_text(platform)),
             ('nes_block_size', str(cfg['block'])), ('rom_block_size', str(cfg['block'])),
             ('execution', 'Python standard-library engine stored in resources; SQLite alone does not execute Python'),
             ('archive_policy', 'All original archive checksums retained as historical identity; export re-packs and verifies separate canonical output checksums; no ZIP payloads retained'),
             ('journal_policy', 'DELETE + synchronous FULL; one persistent SQLite file'),
-            ('storage', f"SHA256 {cfg['block'] // 1024} KiB block dedup; family-ordered solid LZMA2 groups up to {cfg['solid'] // MIB} MiB ({cfg['dictionary'] // MIB} MiB dictionary); export-only ZIP plans"),
+            ('storage', storage_text(platform, cfg['block'], cfg['solid'], cfg['dictionary'])),
             ('solid_group_max_bytes', str(cfg['solid'])), ('solid_group_dictionary_bytes', str(cfg['dictionary'])), ('solid_group_cache_bytes', str(max(96 * MIB, 2 * cfg['solid']))),
             ('compression_group_max_bytes', '2097152'), ('compression_group_dictionary_bytes', '4194304'), ('compression_group_cache_bytes', '16777216'),
             ('frontend_extension_version', '1'), ('frontend_scraping_state', 'placeholders only; no fetched metadata, media or API credentials'),

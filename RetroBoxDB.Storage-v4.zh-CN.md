@@ -6,21 +6,21 @@
 
 | 平台 | 原始大小（ZIP／解压后 ROM） | 完整库 | 比例（相对 ZIP／ROM） | Catalog | 单个 ROM（冷缓存） | 单个 TorrentZip（冷缓存） | 按 DAT 整套导出 |
 | --- | --- | ---: | ---: | ---: | --- | --- | --- |
-| NES | 4.35 GiB／11.18 GiB | 536.8 MiB | 12.1%／4.7% | 145.3 MiB | 2.325 s | 1.983 s | 71.7 MiB/s（7,090 个文件） |
-| SNES | 6.06 GiB／10.90 GiB | 1.76 GiB | 29.1%／16.2% | 53.8 MiB | 1.094 s | 1.397 s | 28.0 MiB/s（4,261 个文件） |
-| Mega Drive | 4.66 GiB／9.61 GiB | 998.6 MiB | 20.9%／10.2% | 44.9 MiB | 1.734 s | 2.087 s | 18.8 MiB/s（3,398 个文件） |
-| Game Boy | 401.1 MiB／1.05 GiB | 177.8 MiB | 44.3%／16.5% | 35.7 MiB | 1.594 s | 1.812 s | 41.0 MiB/s（2,232 个文件） |
-| Game Boy Color | 1.38 GiB／4.42 GiB | 522.2 MiB | 37.1%／11.5% | 45.6 MiB | 1.719 s | 1.857 s | 56.2 MiB/s（2,503 个文件） |
-| Game Boy Advance | 21.20 GiB／44.24 GiB | 7.01 GiB | 33.1%／15.9% | 57.9 MiB | 2.413 s | 2.682 s | 25.1 MiB/s（3,676 个文件） |
-| Famicom Disk System | 35.2 MiB／85.7 MiB | 21.7 MiB | 61.6%／25.3% | 10.1 MiB | 0.364 s | 0.334 s | 30.4 MiB/s（405 个文件） |
-| Satellaview | 324.1 MiB／703.6 MiB | 115.7 MiB | 35.7%／16.4% | 10.5 MiB | 2.78 s | 2.613 s | 61.6 MiB/s（561 个文件） |
-| Master System | 177.4 MiB／392.5 MiB | 84.6 MiB | 47.7%／21.6% | 18.8 MiB | 1.783 s | 1.799 s | 43.9 MiB/s（1,189 个文件） |
-| 32X | 593.1 MiB／1.09 GiB | 87.6 MiB | 14.8%／7.8% | 3.7 MiB | 1.524 s | 1.707 s | 69.9 MiB/s（219 个文件） |
-| WonderSwan | 150.5 MiB／383.0 MiB | 81.2 MiB | 53.9%／21.2% | 3.8 MiB | 2.225 s | 2.433 s | 53.2 MiB/s（257 个文件） |
-| WonderSwan Color | 246.6 MiB／659.1 MiB | 126.4 MiB | 51.3%／19.2% | 3.8 MiB | 1.226 s | 1.398 s | 54.2 MiB/s（253 个文件） |
-| NeoGeo Pocket | 5.3 MiB／13.7 MiB | 6.0 MiB | 114.6%／44.1% | 1.6 MiB | 0.091 s | 0.186 s | 29.5 MiB/s（13 个文件） |
-| NeoGeo Pocket Color | 93.0 MiB／261.8 MiB | 37.9 MiB | 40.8%／14.5% | 3.5 MiB | 0.943 s | 1.184 s | 52.5 MiB/s（128 个文件） |
-| Pokémon Mini | 8.9 MiB／35.9 MiB | 4.8 MiB | 54.2%／13.5% | 2.0 MiB | 0.074 s | 0.118 s | 47.6 MiB/s（46 个文件） |
+| NES | 4.35 GiB／11.18 GiB | 529.9 MiB | 11.9%／4.6% | 145.4 MiB | 2.325 s | 1.983 s | 71.7 MiB/s（7,090 个文件） |
+| SNES | 6.06 GiB／10.90 GiB | 1.76 GiB | 29.1%／16.2% | 54.0 MiB | 1.094 s | 1.397 s | 28.0 MiB/s（4,261 个文件） |
+| Mega Drive | 4.66 GiB／9.61 GiB | 998.9 MiB | 20.9%／10.2% | 45.0 MiB | 1.734 s | 2.087 s | 18.8 MiB/s（3,398 个文件） |
+| Game Boy | 401.1 MiB／1.05 GiB | 178.0 MiB | 44.4%／16.5% | 35.8 MiB | 1.594 s | 1.812 s | 41.0 MiB/s（2,232 个文件） |
+| Game Boy Color | 1.38 GiB／4.42 GiB | 522.4 MiB | 37.1%／11.5% | 45.8 MiB | 1.719 s | 1.857 s | 56.2 MiB/s（2,503 个文件） |
+| Game Boy Advance | 21.20 GiB／44.24 GiB | 7.01 GiB | 33.1%／15.9% | 58.1 MiB | 2.413 s | 2.682 s | 25.1 MiB/s（3,676 个文件） |
+| Famicom Disk System | 35.2 MiB／85.7 MiB | 21.9 MiB | 62.2%／25.5% | 10.2 MiB | 0.364 s | 0.334 s | 30.4 MiB/s（405 个文件） |
+| Satellaview | 324.1 MiB／703.6 MiB | 115.9 MiB | 35.8%／16.5% | 10.6 MiB | 2.78 s | 2.613 s | 61.6 MiB/s（561 个文件） |
+| Master System | 177.4 MiB／392.5 MiB | 84.7 MiB | 47.8%／21.6% | 18.9 MiB | 1.783 s | 1.799 s | 43.9 MiB/s（1,189 个文件） |
+| 32X | 593.1 MiB／1.09 GiB | 87.7 MiB | 14.8%／7.8% | 3.8 MiB | 1.524 s | 1.707 s | 69.9 MiB/s（219 个文件） |
+| WonderSwan | 150.5 MiB／383.0 MiB | 81.2 MiB | 54.0%／21.2% | 3.9 MiB | 2.225 s | 2.433 s | 53.2 MiB/s（257 个文件） |
+| WonderSwan Color | 246.6 MiB／659.1 MiB | 126.5 MiB | 51.3%／19.2% | 3.9 MiB | 1.226 s | 1.398 s | 54.2 MiB/s（253 个文件） |
+| NeoGeo Pocket | 5.3 MiB／13.7 MiB | 6.2 MiB | 117.0%／45.0% | 1.7 MiB | 0.091 s | 0.186 s | 29.5 MiB/s（13 个文件） |
+| NeoGeo Pocket Color | 93.0 MiB／261.8 MiB | 38.0 MiB | 40.9%／14.5% | 3.6 MiB | 0.943 s | 1.184 s | 52.5 MiB/s（128 个文件） |
+| Pokémon Mini | 8.9 MiB／35.9 MiB | 4.9 MiB | 55.4%／13.8% | 2.1 MiB | 0.074 s | 0.118 s | 47.6 MiB/s（46 个文件） |
 
 Catalog 从新的 SQLite 文件建立，`compression_groups`、`chunks`、`object_chunks` 三张表为空，不含 ROM 数据、DAT／DB／Dump Log 原文件或压缩数据。导出性能为本机（Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz，Python 3.14）在空闲负载下的实测，导出过程包含全部校验：
 
