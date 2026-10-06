@@ -1,10 +1,10 @@
 {
-  "tag": "ngp-catalog-20261006",
-  "title": "NeoGeo Pocket Catalog: storage v4, first release",
+  "tag": "ngp-catalog-20261006-2",
+  "title": "NeoGeo Pocket Catalog: naming normalized, one schema for fifteen platforms",
   "platform": "ngp",
   "catalog_name": "RetroBoxDB.NGP.Catalog.sqlite",
-  "base_url": "https://github.com/rshi0212/RetroBoxDB-NGP/releases/download/ngp-catalog-base-20261006/RetroBoxDB.NGP.Catalog.sqlite",
-  "base_sha256": "ecdacb5929d714f33e029993f9ee00937da4f10ea19c045b263c74e4087b0b9c",
+  "base_url": "https://github.com/rshi0212/RetroBoxDB-NGP/releases/download/ngp-catalog-base-20261006-2/RetroBoxDB.NGP.Catalog.sqlite",
+  "base_sha256": "1c913f143e0a2bcd4518abe74f2a7c9fcee1e5245e3eb0fb1e6cdbc95199e478",
   "data_table_sha256": {
     "archive_entries": {
       "rows": 16,
@@ -47,8 +47,8 @@
       "sha256": "1e3111594f362b7e36824b2a5529182f5fede482b896406aec425953b4cc0bdb"
     },
     "events": {
-      "rows": 10,
-      "sha256": "576133fe5d911363c2490fb6d143c3f21ac7a22b5775d98d06326fc29b572b98"
+      "rows": 11,
+      "sha256": "ac7345b249bae8e6c4ea20b6429d99208822f99e46b1984662eea5015bc81a23"
     },
     "fds_hardware": {
       "rows": 0,
@@ -76,7 +76,7 @@
     },
     "frontend_platforms": {
       "rows": 1,
-      "sha256": "c230ca8ed5e925f84ec4882486688a28cf09417121cc868fabd82717098e31b1"
+      "sha256": "08497d9be7372b5223284e14f829d2e7e46f36c43878ddd7cbfe88308361e26b"
     },
     "frontend_profiles": {
       "rows": 1,
@@ -124,7 +124,7 @@
     },
     "meta": {
       "rows": 23,
-      "sha256": "1adef3b982dea9f05591d4660fbd0a0db1da4dbb93797a1c92488a9862437cd2"
+      "sha256": "45e7e7fdda9d67ac0d555723d0c3a1b5e5d8308f3100fc13998bc9005f762e57"
     },
     "naming_decisions": {
       "rows": 0,
@@ -307,8 +307,8 @@
       "sha256": "22e0a1fcf583b574e9b3861b7b651ee25c4500fcc7b118f6dd41ca0ba4f6bc11"
     },
     "scraper_providers": {
-      "rows": 1,
-      "sha256": "ad358de51eea41e843cd0757449d5bc7ed51b790e76768b9651051451c16bf86"
+      "rows": 2,
+      "sha256": "82920b2b40de7fc602f4f14769e0dd2384f435705a9be8cd4ed08a984c72d37f"
     },
     "sms_hardware": {
       "rows": 0,
@@ -416,6 +416,10 @@
       "kind": "python",
       "path": "tools/export_nointro_parents.py"
     },
+    "normalize_db.py": {
+      "kind": "python",
+      "path": "tools/normalize_db.py"
+    },
     "tests_v4.py": {
       "kind": "python",
       "path": "tests/test_v4.py"
@@ -448,21 +452,21 @@
       "kind": "json",
       "path": "assessment/data/storage-experiment-satellaview.json"
     },
-    "storage-experiment-sms": {
+    "storage-experiment-mastersystem": {
       "kind": "json",
-      "path": "assessment/data/storage-experiment-sms.json"
+      "path": "assessment/data/storage-experiment-mastersystem.json"
     },
-    "storage-experiment-32x": {
+    "storage-experiment-sega32x": {
       "kind": "json",
-      "path": "assessment/data/storage-experiment-32x.json"
+      "path": "assessment/data/storage-experiment-sega32x.json"
     },
-    "storage-experiment-ws": {
+    "storage-experiment-wswan": {
       "kind": "json",
-      "path": "assessment/data/storage-experiment-ws.json"
+      "path": "assessment/data/storage-experiment-wswan.json"
     },
-    "storage-experiment-wsc": {
+    "storage-experiment-wswanc": {
       "kind": "json",
-      "path": "assessment/data/storage-experiment-wsc.json"
+      "path": "assessment/data/storage-experiment-wswanc.json"
     },
     "storage-experiment-ngp": {
       "kind": "json",
