@@ -7,8 +7,8 @@ Single-file SQLite preservation database for SNK NeoGeo Pocket. The public Catal
 | Item | Value |
 | --- | --- |
 | Original size | 14 source ZIPs, 5.3 MiB (No-Intro 13, RetroAchievements sets 1); 14 ROM files, 13.7 MiB uncompressed |
-| Stored size | populated database 6.2 MiB; public Catalog 1.7 MiB (no ROM data) |
-| Ratio | 117.0% of the source ZIPs, 45.0% of the uncompressed ROM files |
+| Stored size | populated database 6.3 MiB; public Catalog 1.8 MiB (no ROM data) |
+| Ratio | 120.3% of the source ZIPs, 46.2% of the uncompressed ROM files |
 | Technology | storage v4: SHA256-deduplicated 128 KiB blocks packed in No-Intro family order into solid LZMA2 groups of up to 32 MiB (32 MiB dictionary); per-block SHA256 and per-object CRC32/MD5/SHA1/SHA256 verification; source ZIPs reproduced byte-for-byte from TorrentZip plans |
 | Export performance | Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz, idle, Python 3.14.4, all checks included. whole newest-DAT set with `export_set.py` (13 files, each checked against the DAT hashes): 29.5 MiB/s, 30 ms per file on average; single file with a cold cache (the group is decoded up to the file): ROM 0.091 s, TorrentZip 0.186 s on average |
 
@@ -37,7 +37,7 @@ Single-file SQLite preservation database for SNK NeoGeo Pocket. The public Catal
 | DAT coverage per version | 20250904-215533: 13/13 |
 | Local ROMs in no DAT | 0 |
 | ROM files of the RetroAchievements set | in a No-Intro DAT 1, RA only 0, hash not in the latest RA snapshot 0 ([list](reports/ra-ngp-collection-unknown.csv)); RA games still without a local ROM: [gap list](reports/ra-ngp-missing.csv) |
-| No-Intro DB Export + Dump Log unknown | 13 archives, 22 file identities, 11 documented hardware assertions; Dump Log Verified 8 |
+| No-Intro DB Export + Dump Log 20250904-215533 | 13 archives, 22 file identities, 11 documented hardware assertions; Dump Log Verified 8 |
 | RetroAchievements (console 14) | 1 games with achievements: 1 with a local ROM (1 ROMs), 0 with the ROM in a sibling database, 0 DAT only, 0 DB file only, 0 without a No-Intro counterpart |
 | Chinese names | 10 of 10 rows translated (9 unique); 10 local ROMs have a Chinese name |
 | Populated-database audit | 16 objects, 1 groups, 16 archive plans, all passed |

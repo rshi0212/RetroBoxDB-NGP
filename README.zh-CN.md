@@ -7,8 +7,8 @@ SNK NeoGeo Pocket的单文件 SQLite 保存库。公开的 Catalog 只含元数�
 | 项目 | 数值 |
 | --- | --- |
 | 原始大小 | 源 ZIP 14 个，5.3 MiB（No-Intro 13 个，RetroAchievements 集合 1 个）；解压后 ROM 14 个，13.7 MiB |
-| 入库后大小 | 完整库 6.2 MiB；公开 Catalog 1.7 MiB（不含 ROM 数据） |
-| 比例 | 完整库为原 ZIP 的 117.0%，为解压后 ROM 总量的 45.0% |
+| 入库后大小 | 完整库 6.3 MiB；公开 Catalog 1.8 MiB（不含 ROM 数据） |
+| 比例 | 完整库为原 ZIP 的 120.3%，为解压后 ROM 总量的 46.2% |
 | 使用的技术 | 存储 v4：128 KiB 块按 SHA256 去重，按 No-Intro 游戏族顺序装入最大 32 MiB 的 LZMA2 实体组（字典 32 MiB）；逐块 SHA256、逐对象 CRC32／MD5／SHA1／SHA256 校验；源 ZIP 由 TorrentZip 配方逐字节重建 |
 | 导出性能 | Intel(R) Core(TM) i7-8650U CPU @ 1.90GHz，空闲负载，Python 3.14.4，含全部校验。按最新 DAT 整套导出（`export_set.py`，13 个文件，逐个按 DAT 哈希校验）：29.5 MiB/s，平均 30 毫秒／个；单个文件冷缓存（每次清空缓存，需解压所在组的前段）：ROM 平均 0.091 秒，TorrentZip 平均 0.186 秒 |
 
@@ -37,7 +37,7 @@ SNK NeoGeo Pocket的单文件 SQLite 保存库。公开的 Catalog 只含元数�
 | 各版 DAT 覆盖 | 20250904-215533：13/13 |
 | 不在任何 DAT 的本地 ROM | 0 |
 | RetroAchievements 集合中的 ROM 文件 | DAT 中有 1，仅 RA 收录 0，哈希不在最新 RA 快照 0（[清单](reports/ra-ngp-collection-unknown.csv)）；仍缺本地 ROM 的 RA 游戏见 [缺口清单](reports/ra-ngp-missing.csv) |
-| No-Intro DB Export＋Dump Log unknown | 13 个档案、22 个文件身份、11 条有文档的硬件声明；Dump Log Verified 8 |
+| No-Intro DB Export＋Dump Log 20250904-215533 | 13 个档案、22 个文件身份、11 条有文档的硬件声明；Dump Log Verified 8 |
 | RetroAchievements（console 14） | 有成就的游戏 1 个：本地有 ROM 1（1 个 ROM），ROM 在兄弟库中 0，仅 DAT 有 0，仅 DB 文件 0，无 No-Intro 对应 0 |
 | 中文名 | 10 条记录中 10 条有中文（9 个唯一名）；本地 ROM 10 个有中文名 |
 | 完整库审计 | 16 个对象、1 个组、16 个 ZIP 配方，全部通过 |
