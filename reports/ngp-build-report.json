@@ -1,0 +1,192 @@
+{
+  "platform": "ngp",
+  "started_at": "2026-10-06T06:40:53.707525+00:00",
+  "engine_version": "4.0.0",
+  "dat_sets": [
+    {
+      "id": 1,
+      "name": "SNK - NeoGeo Pocket (Parent-Clone)",
+      "version": "20250904-215533"
+    }
+  ],
+  "completed_stages": [
+    "dat_import",
+    "rom_import",
+    "scan_diff_catalog",
+    "nointro",
+    "packages",
+    "retroachievements",
+    "game_names"
+  ],
+  "rom_import": {
+    "directories": [
+      "/mnt/MyShare/No-Intro/SNK - NeoGeo Pocket"
+    ],
+    "families": 12,
+    "family_assignment": {
+      "family_from_dat_or_db": 13
+    },
+    "errors": [],
+    "groups": 1,
+    "raw_group_bytes": 11206656,
+    "stored_group_bytes": 3218909,
+    "zips": 13,
+    "sidecar_files": 0,
+    "seconds": 7
+  },
+  "scan": {
+    "1": {
+      "match": 13,
+      "mismatch": 0,
+      "unverifiable": 0,
+      "no_candidate": 0
+    }
+  },
+  "dat_diff": {},
+  "catalog": {
+    "games": 12,
+    "releases": 13,
+    "old_dat_games_linked": 0,
+    "rom_release_links": 13
+  },
+  "nointro": {
+    "snapshot_id": 1,
+    "version": "unknown",
+    "archives": 13,
+    "files": 22,
+    "files_with_local_payload": 13,
+    "sources": 39,
+    "dumplog_rows": 13,
+    "dat_links": 13,
+    "archive_release_links": 13,
+    "hardware_assertions": 11,
+    "dumplog_status": {
+      "unverified": 1,
+      "verified": 8,
+      "trusted_unverified": 4
+    },
+    "anomalies": {
+      "file_without_sha256": 8
+    }
+  },
+  "packages": {
+    "packages_by_dat_set": {
+      "1": 13
+    },
+    "errors": []
+  },
+  "retroachievements": {
+    "snapshot_id": 1,
+    "console_id": 14,
+    "fetched_at": "2026-10-06T06:41:03.158567+00:00",
+    "games": 97,
+    "hashes": 116,
+    "games_with_achievements": 42,
+    "hashes_of_games_with_achievements": 57,
+    "local_roms_matched": 1,
+    "ra_games_with_local_rom": 1,
+    "dat_entries_matched": 1,
+    "ra_games_in_any_dat": 1,
+    "hashes_with_achievements_unexplained": 56,
+    "by_category_local": {
+      "Official": 1
+    }
+  },
+  "game_names": {
+    "source_name": "SNK - NeoGeo Pocket.csv",
+    "source_sha256": "03c742ec63f09957e20a30716b9697ea0a7c7e041b1b692f7f8243de83d0bf36",
+    "normalization_version": "parentheses-whitespace-casefold-v1",
+    "import_id": 1,
+    "matching_version": "game-qualified-title-v1",
+    "rows": 10,
+    "rows_with_chinese": 10,
+    "unique_chinese_names": 9,
+    "normalized_titles": 10,
+    "matched_rows": 10,
+    "matched_rows_with_chinese": 10,
+    "matched_releases": 10,
+    "releases_with_chinese": 10,
+    "matched_games": 10,
+    "matched_roms": 10,
+    "matched_links": 10,
+    "ambiguous_links": 0,
+    "ambiguous_rows": 0,
+    "unmatched_rows": 0,
+    "unresolved_rows": [],
+    "multiple_translation_keys": [],
+    "matched_rows_by_method": {
+      "exact_title": 10
+    }
+  },
+  "audit": {
+    "integrity_check": [
+      "ok"
+    ],
+    "foreign_key_errors": [],
+    "objects_checked": 16,
+    "archive_plans_checked": 16,
+    "compression_groups_checked": 1,
+    "historical_zip_objects": 16,
+    "ok": true,
+    "errors": []
+  },
+  "stats": {
+    "counts": {
+      "files": 45,
+      "objects": 32,
+      "chunks": 90,
+      "roms": 13,
+      "dat_sets": 1,
+      "dat_roms": 13,
+      "transformations": 0,
+      "packages": 13,
+      "media": 0
+    },
+    "storage": {
+      "logical_content_bytes": 12289833,
+      "historical_zip_bytes_not_stored": 4672382,
+      "unique_raw_chunk_bytes": 11241257,
+      "stored_chunk_bytes": 3225855,
+      "header_body_recipes": 0,
+      "zip_plans": 16,
+      "file_occurrences": 45,
+      "catalog_objects": 32
+    },
+    "dat_coverage": [
+      {
+        "dat_set_id": 1,
+        "status": "matched",
+        "count": 13
+      }
+    ],
+    "codecs": [
+      {
+        "codec": "group",
+        "blocks": 87,
+        "raw_bytes": 11206656,
+        "stored_bytes": 0
+      },
+      {
+        "codec": "lzma",
+        "blocks": 3,
+        "raw_bytes": 34601,
+        "stored_bytes": 6946
+      }
+    ],
+    "storage_schema_version": 4,
+    "compression_groups": {
+      "groups": 1,
+      "raw_bytes": 11206656,
+      "stored_bytes": 3218909
+    },
+    "platform": "ngp",
+    "solid_groups": {
+      "groups": 1,
+      "raw_bytes": 11206656,
+      "stored_bytes": 3218909
+    }
+  },
+  "finished_at": "2026-10-06T06:41:04.002270+00:00",
+  "seconds": 11,
+  "database_bytes": 6389760
+}
