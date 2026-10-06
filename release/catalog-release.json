@@ -1,0 +1,515 @@
+{
+  "tag": "ngp-catalog-20261006",
+  "title": "NeoGeo Pocket Catalog: storage v4, first release",
+  "platform": "ngp",
+  "catalog_name": "RetroBoxDB.NGP.Catalog.sqlite",
+  "base_url": "https://github.com/rshi0212/RetroBoxDB-NGP/releases/download/ngp-catalog-base-20261006/RetroBoxDB.NGP.Catalog.sqlite",
+  "base_sha256": "ecdacb5929d714f33e029993f9ee00937da4f10ea19c045b263c74e4087b0b9c",
+  "data_table_sha256": {
+    "archive_entries": {
+      "rows": 16,
+      "sha256": "139cd7dfe8f7598bec6bc6686491f83c26bd3dbb620877b6b6723a2055227fca"
+    },
+    "archive_plans": {
+      "rows": 16,
+      "sha256": "8aa3faeb7146a101cfe9cbfea0f3d8c377df30c4b80b6aacfe17c17197c4a7a3"
+    },
+    "archive_profiles": {
+      "rows": 1,
+      "sha256": "a8247ca6bd7302d45bbf2e6dfe2fae5b8624f1333cc6a4087cd18bac6e463690"
+    },
+    "bsx_hardware": {
+      "rows": 0,
+      "sha256": "44f335cb2b7c8f195e63c47f303f37dadc7e880771c4b23baef96323d6cb90d3"
+    },
+    "chunks": {
+      "rows": 0,
+      "sha256": "d8d257699f7b624120779c84da8ed3edd1554e7bd23d2a1a5b0d3e174cb9bed3"
+    },
+    "compression_groups": {
+      "rows": 0,
+      "sha256": "3e0707c7194961dfc2109f83c30d607865be1e5a36a9c44e7f116430408ed440"
+    },
+    "dat_changes": {
+      "rows": 0,
+      "sha256": "ff8f6598d7f24c2a8cea7f82ca7291d1de3afaaaeec195d9f78312e498f53aa4"
+    },
+    "dat_games": {
+      "rows": 13,
+      "sha256": "0b8d7adce5b908949c59541773700454acb33e6cddce5e3e2eefaef55332cad4"
+    },
+    "dat_roms": {
+      "rows": 13,
+      "sha256": "3bc6f5e45296abe4bb0571ef6c5c07284232abe3a0d22ccb5ab8e411dad14880"
+    },
+    "dat_sets": {
+      "rows": 1,
+      "sha256": "1e3111594f362b7e36824b2a5529182f5fede482b896406aec425953b4cc0bdb"
+    },
+    "events": {
+      "rows": 10,
+      "sha256": "576133fe5d911363c2490fb6d143c3f21ac7a22b5775d98d06326fc29b572b98"
+    },
+    "fds_hardware": {
+      "rows": 0,
+      "sha256": "375c736a39de19330edc6ac46a26acccfda18a13e70ba87f22f6d39da91d9c42"
+    },
+    "file_archives": {
+      "rows": 30,
+      "sha256": "c90ef64696b50d4441eeb7a82e4bf746450dd43cf04273260f1b404daf0b6e8b"
+    },
+    "files": {
+      "rows": 47,
+      "sha256": "bc039787c528dea898b3fc4e16f1a184d89cdbad148a6a9b2f7eda15f283e9b8"
+    },
+    "frontend_fields": {
+      "rows": 40,
+      "sha256": "64d4f821ac0e21657b49782ba09eb79a07f598c7a742c73a960b750d51b5fe27"
+    },
+    "frontend_game_values": {
+      "rows": 0,
+      "sha256": "61c7d085acca200f90bf287a4cffbf222ccff8a06fe51e6e0a87bd2459e38653"
+    },
+    "frontend_media_slots": {
+      "rows": 0,
+      "sha256": "c9fb537b894980ea6242527c682dc07da5a5fa68cdaf461c6453925c7e1681c1"
+    },
+    "frontend_platforms": {
+      "rows": 1,
+      "sha256": "c230ca8ed5e925f84ec4882486688a28cf09417121cc868fabd82717098e31b1"
+    },
+    "frontend_profiles": {
+      "rows": 1,
+      "sha256": "10dd40fa97915298ae88914ac461a382ea15f946744942e9adcfa4f91d629d09"
+    },
+    "game_chinese_names": {
+      "rows": 9,
+      "sha256": "c2d97c7294a6b3c2cbad9cc207c1ef7b900c76097f0ba82f60af7d2fc7a3b09e"
+    },
+    "game_name_entries": {
+      "rows": 10,
+      "sha256": "2bb059e3cba24dbd8b106ee3957b5e3d6046c673bca02ad4dfa1025a786e924b"
+    },
+    "game_name_imports": {
+      "rows": 1,
+      "sha256": "89e60f4e720e24212ff09c0784a6fd4be966af0ccbd9f8ef71d185e2d1ff237e"
+    },
+    "game_name_match_decisions": {
+      "rows": 10,
+      "sha256": "9cf72729e42f4a49b79e9398d7e9028b6ff562a241f213d23569984d7c38f88d"
+    },
+    "games": {
+      "rows": 12,
+      "sha256": "5b79b5822d98b257b38f60000ce78692f77dfedc1632c524d2d5381b80f8ab11"
+    },
+    "gb_hardware": {
+      "rows": 0,
+      "sha256": "6c43f561fac1c3edf4d629e477485caa8fc0ec9a3e20aa7e90844e62d9234d62"
+    },
+    "gba_hardware": {
+      "rows": 0,
+      "sha256": "a779fbf1ccd01e827d959df4683b11a327d1b8a152a1317d3726966550c5ce89"
+    },
+    "hardware_assertions": {
+      "rows": 11,
+      "sha256": "49816bd398dbcd1efaa38b1ab3a58b9e98fb7756499f8ebd15340ebda19f65ea"
+    },
+    "md_hardware": {
+      "rows": 0,
+      "sha256": "15d766ef38079ba64e5a94d59662fb560536d68626b295c96a9e01dd857cfe05"
+    },
+    "media": {
+      "rows": 0,
+      "sha256": "ff454ed3befce51f71f38ba2eb228a619c3d7afeeebd76c0a1f26400444af6a5"
+    },
+    "meta": {
+      "rows": 23,
+      "sha256": "1adef3b982dea9f05591d4660fbd0a0db1da4dbb93797a1c92488a9862437cd2"
+    },
+    "naming_decisions": {
+      "rows": 0,
+      "sha256": "b132557cdb9cad6b53fb63888d03a54ed66f91bc0bade497cdcc90609541be6f"
+    },
+    "nes_hardware": {
+      "rows": 0,
+      "sha256": "c28ddc2a6f396bb9bd78355677df991aca4a5053f8506e043b94a5e42d788d6d"
+    },
+    "nes_recipes": {
+      "rows": 0,
+      "sha256": "751f5c09cc9ab01187b10f062c562a74eb320de058ba0821aebeb47306dfd8b3"
+    },
+    "ngp_hardware": {
+      "rows": 10,
+      "sha256": "2039da07596a4ff320eb43ccb4b07001264aed98701b2cc7b45cfd7c3ce35722"
+    },
+    "ni_anomalies": {
+      "rows": 8,
+      "sha256": "232e0a86643da8fa5e14d24a9079550858bef23209b9a428266f9448ab143f27"
+    },
+    "ni_archive_releases": {
+      "rows": 13,
+      "sha256": "dd6792262ee3a94f847a45637b9e9baffdf945a69a47d830a1a33aef07f81258"
+    },
+    "ni_archives": {
+      "rows": 13,
+      "sha256": "b0e87d02daf5b90bb4ca16c9cdd457503db28f7f2b9f3ecdd263f01b259c53cd"
+    },
+    "ni_dat_links": {
+      "rows": 13,
+      "sha256": "d4b40429cfa4b2829ad059aedc8e53953094e81ca42fdbf33a665f0c8d254249"
+    },
+    "ni_dumplog": {
+      "rows": 13,
+      "sha256": "42462eb2176e3606487c29ee5f74bd69e9ba24020040d0868b1a43a437da1032"
+    },
+    "ni_dumplog_files": {
+      "rows": 13,
+      "sha256": "7d5aeb77ec122fe4de846e58888cff067f6867f5501683db3fe76e280381009b"
+    },
+    "ni_files": {
+      "rows": 22,
+      "sha256": "da30451d9d555078c3154429654dfb666746e9a281f8fd851f748c3c56690b52"
+    },
+    "ni_headers": {
+      "rows": 0,
+      "sha256": "0ff437dfe9df929f2796fb0567f4e1a1ea10f587dd201bbb46f35454729be9f4"
+    },
+    "ni_pair_checks": {
+      "rows": 0,
+      "sha256": "6eef99757248b711339c3fad27b17e67281295a550699149f56e6bfee95a499c"
+    },
+    "ni_reconstructions": {
+      "rows": 0,
+      "sha256": "c5ffdc2ba8585597aeab7763567f0736c2cfd6d884370217495ab620ec35f915"
+    },
+    "ni_snapshots": {
+      "rows": 1,
+      "sha256": "64372afb71ca45e2300a5695a380b3ee7f821e2ffcfec69a7362c4fc899357ba"
+    },
+    "ni_source_files": {
+      "rows": 39,
+      "sha256": "ab39632380d11944b1fdbea5002497581a87c6b1fefa8754042e45bd74e65221"
+    },
+    "ni_sources": {
+      "rows": 39,
+      "sha256": "6b9ac03b30e08898795e63cfb466d7916bbef0ee8dbe23e1b49c6bb607922417"
+    },
+    "object_chunks": {
+      "rows": 0,
+      "sha256": "fd5a7a33f506e106df266f6402be4ab11593068d2660fc8a3013ceb920dcf5f9"
+    },
+    "object_families": {
+      "rows": 13,
+      "sha256": "00644e3229f1362073dec4fa5e7cb3cde58e2cec08e4f024d563c66ad52f5aa9"
+    },
+    "objects": {
+      "rows": 32,
+      "sha256": "d085d79366ab44cf983345e80b3b2ece4f1910e361f27f75bfa8f53b45d797d0"
+    },
+    "package_members": {
+      "rows": 13,
+      "sha256": "07f0079fab6d9e09f6ade80d99e05903ca77e891b0fb2402ac85f98cdbe6ff68"
+    },
+    "packages": {
+      "rows": 13,
+      "sha256": "065b3a8e89601a3711c7d3c9e59dbb7b76294e0bd4d3523442d002e6276495e9"
+    },
+    "platforms": {
+      "rows": 1,
+      "sha256": "aa049afd066f5f7f45c84ecc5b2451214bae874fa374eddd1d7336a28841a774"
+    },
+    "pokemini_hardware": {
+      "rows": 0,
+      "sha256": "dc96eb03b53617ff828d26e3915af95a36468cc5ec5eea4bf01fbdf0ee429631"
+    },
+    "provider_record_media": {
+      "rows": 0,
+      "sha256": "3ec0c10f07801ba685db1093a142faff421ff51fe34f3af611d9848e89129c7f"
+    },
+    "provider_record_values": {
+      "rows": 0,
+      "sha256": "06d4460adf562dd478efbb2953eba00e81eed2639ca38a4d272afb58dbc3cf49"
+    },
+    "provider_records": {
+      "rows": 0,
+      "sha256": "8d1aed94767a621a19255f9831ccd32422401538e907aa60255b17471f53a041"
+    },
+    "provider_snapshot_records": {
+      "rows": 0,
+      "sha256": "59f3c85810597549f150b6d04a899a44545a2b4fe6006a5a57134d827bafcbb9"
+    },
+    "provider_snapshots": {
+      "rows": 0,
+      "sha256": "f35a831d676242731ee6a3638ae1227bf32b28367205a13ce2f610e6c3df068d"
+    },
+    "ra_games": {
+      "rows": 97,
+      "sha256": "270a633f39ed524bce05eefed0a2dfaaeabd7e8ef314a9f417e920a34d8c0ffd"
+    },
+    "ra_hashes": {
+      "rows": 116,
+      "sha256": "9ce735a671690d0eeff48ad440b45dcbea08b1be1e9559a9a9b83e8c032d2ccd"
+    },
+    "ra_snapshots": {
+      "rows": 1,
+      "sha256": "c56b21855695821f8f04e9574a81a899c35653eb98e6bf3c92fe075618972e1f"
+    },
+    "release_dat_games": {
+      "rows": 13,
+      "sha256": "cd74a09b8ed78f5eba2c156afdf9de54a9c1a0bb3a7c01d710f01bb348d27aa7"
+    },
+    "release_name_links": {
+      "rows": 10,
+      "sha256": "fd81d3cc9cb7e6ec583e480494f10557022d1e3adb84e5d17895dbb1c8f80533"
+    },
+    "releases": {
+      "rows": 13,
+      "sha256": "65f76444388f9a70f2a23b72647e218988ad94b0796d5b659e9c222ac5fd642e"
+    },
+    "repair_attempts": {
+      "rows": 0,
+      "sha256": "3c642e0d29d1e5dab60d2328c3d565be7c0acc7c70e44cb33566db7e538d7ffa"
+    },
+    "rom_components": {
+      "rows": 23,
+      "sha256": "626c9fb867374a2dd5756b6fa43e9bf5c41615bb996dbfaecb8b0cdfcab09b6d"
+    },
+    "rom_ra_hashes": {
+      "rows": 13,
+      "sha256": "76b1ec316c2df2052a397b20f6a367af1009c4552c91a0047efa07c484107c94"
+    },
+    "rom_releases": {
+      "rows": 13,
+      "sha256": "12d52d5ccaf561d51c409221590eb9cd79998ccbbe6bd2d1ece2a82d8b28f94b"
+    },
+    "roms": {
+      "rows": 13,
+      "sha256": "a35807749a3a1168587ff9b89c0c8acf0e2b72ce8625c50834d4b13c64d0a191"
+    },
+    "scrape_blobs": {
+      "rows": 0,
+      "sha256": "d69e8bc381417dc1569bb2547217128153f7c64a25c8af024bc824e313eeb304"
+    },
+    "scrape_checks": {
+      "rows": 0,
+      "sha256": "70ca06aa5ee90c1437372a352754bd6c73b417eab499ace5ca3c822c21efaf54"
+    },
+    "scrape_records": {
+      "rows": 0,
+      "sha256": "ee22a6bc78d4f6cf94e515608899aff607cefe667196adc091ee83b5d293291f"
+    },
+    "scrape_texts": {
+      "rows": 0,
+      "sha256": "8f10df29cf80783a2d113e0854c92db8f9c15f7d7bea55224166ad98637bd05a"
+    },
+    "scraper_game_links": {
+      "rows": 0,
+      "sha256": "22e0a1fcf583b574e9b3861b7b651ee25c4500fcc7b118f6dd41ca0ba4f6bc11"
+    },
+    "scraper_providers": {
+      "rows": 1,
+      "sha256": "ad358de51eea41e843cd0757449d5bc7ed51b790e76768b9651051451c16bf86"
+    },
+    "sms_hardware": {
+      "rows": 0,
+      "sha256": "0f28796bb95b44ff2c416e9d7c1d66f03d8620c25689e7e5d2ddd2366bf07d39"
+    },
+    "snes_hardware": {
+      "rows": 0,
+      "sha256": "affa7bfc7d2085320a163fb9ea1ce7500c1ac222aab17389817a91d784922466"
+    },
+    "solid_group_families": {
+      "rows": 12,
+      "sha256": "38549e31e50e9d3cf6cf5478a145a89c630c511a300c7cd2b5624dbd37db489c"
+    },
+    "source_collections": {
+      "rows": 2,
+      "sha256": "b34aca6cd12cd5e12b83adc1d6054db64d8c25457312e67faf0a96620fcd3402"
+    },
+    "sources": {
+      "rows": 44,
+      "sha256": "385c511d7b60512bf38c00e4dec447cacf417141f4060257332d06a4dab40d1a"
+    },
+    "ss_lookups": {
+      "rows": 0,
+      "sha256": "1f3830951443b3ba835c0df68f8109720625b72e05268052759cda8173ef9e53"
+    },
+    "ss_record_roms": {
+      "rows": 0,
+      "sha256": "cd4bcd17af6f21b58cd49fb15a5ff13a976b99e9c5d53acea9ec135bcbf761cc"
+    },
+    "transformations": {
+      "rows": 0,
+      "sha256": "d34d00b4de69a479200769531bc6d17502d5047117c15922c0616e01a1cbc24a"
+    },
+    "validations": {
+      "rows": 13,
+      "sha256": "f3e23df681379a2094c5e612dac0a8d4cb8a90546249e502a101436a12895197"
+    },
+    "ws_hardware": {
+      "rows": 0,
+      "sha256": "db3b69505e80a7a046eb7fae0f6d4ba62fa9a50462e32bc8885593fccdf1844d"
+    }
+  },
+  "resources": {
+    "schema_v4.sql": {
+      "kind": "sql",
+      "path": "tools/schema_v4.sql"
+    },
+    "rom_headers.py": {
+      "kind": "python",
+      "path": "tools/rom_headers.py"
+    },
+    "engine_v4.py": {
+      "kind": "python",
+      "path": "tools/engine_v4.py"
+    },
+    "nointro_db.py": {
+      "kind": "python",
+      "path": "tools/nointro_db.py"
+    },
+    "build_db.py": {
+      "kind": "python",
+      "path": "tools/build_db.py"
+    },
+    "finalize_db.py": {
+      "kind": "python",
+      "path": "tools/finalize_db.py"
+    },
+    "import_ra.py": {
+      "kind": "python",
+      "path": "tools/import_ra.py"
+    },
+    "ra_report.py": {
+      "kind": "python",
+      "path": "tools/ra_report.py"
+    },
+    "update_db.py": {
+      "kind": "python",
+      "path": "tools/update_db.py"
+    },
+    "retune_db.py": {
+      "kind": "python",
+      "path": "tools/retune_db.py"
+    },
+    "migrate_v4.py": {
+      "kind": "python",
+      "path": "tools/migrate_v4.py"
+    },
+    "export_set.py": {
+      "kind": "python",
+      "path": "tools/export_set.py"
+    },
+    "build_catalog_release.py": {
+      "kind": "python",
+      "path": "tools/build_catalog_release.py"
+    },
+    "import_game_names.py": {
+      "kind": "python",
+      "path": "tools/import_game_names.py"
+    },
+    "game_names_schema.sql": {
+      "kind": "sql",
+      "path": "tools/game_names_schema.sql"
+    },
+    "export_nointro_parents.py": {
+      "kind": "python",
+      "path": "tools/export_nointro_parents.py"
+    },
+    "tests_v4.py": {
+      "kind": "python",
+      "path": "tests/test_v4.py"
+    },
+    "README.zh-CN": {
+      "kind": "markdown",
+      "path": "RetroBoxDB.Storage-v4.zh-CN.md"
+    },
+    "README.en": {
+      "kind": "markdown",
+      "path": "RetroBoxDB.Storage-v4.en.md"
+    },
+    "TECHNICAL-DESIGN.en": {
+      "kind": "markdown",
+      "path": "RetroBoxDB.Storage-v4.Technical-Design.en.md"
+    },
+    "storage-experiment-snes-md": {
+      "kind": "json",
+      "path": "assessment/data/storage-experiment-snes-md.json"
+    },
+    "storage-experiment-gb-gbc-gba": {
+      "kind": "json",
+      "path": "assessment/data/storage-experiment-gb-gbc-gba.json"
+    },
+    "storage-experiment-fds": {
+      "kind": "json",
+      "path": "assessment/data/storage-experiment-fds.json"
+    },
+    "storage-experiment-satellaview": {
+      "kind": "json",
+      "path": "assessment/data/storage-experiment-satellaview.json"
+    },
+    "storage-experiment-sms": {
+      "kind": "json",
+      "path": "assessment/data/storage-experiment-sms.json"
+    },
+    "storage-experiment-32x": {
+      "kind": "json",
+      "path": "assessment/data/storage-experiment-32x.json"
+    },
+    "storage-experiment-ws": {
+      "kind": "json",
+      "path": "assessment/data/storage-experiment-ws.json"
+    },
+    "storage-experiment-wsc": {
+      "kind": "json",
+      "path": "assessment/data/storage-experiment-wsc.json"
+    },
+    "storage-experiment-ngp": {
+      "kind": "json",
+      "path": "assessment/data/storage-experiment-ngp.json"
+    },
+    "storage-experiment-ngpc": {
+      "kind": "json",
+      "path": "assessment/data/storage-experiment-ngpc.json"
+    },
+    "storage-experiment-pokemini": {
+      "kind": "json",
+      "path": "assessment/data/storage-experiment-pokemini.json"
+    },
+    "storage-curves": {
+      "kind": "json",
+      "path": "assessment/data/storage-curves.json"
+    },
+    "audit-resolution": {
+      "kind": "markdown",
+      "path": "reports/audit-resolution-20261004.md"
+    },
+    "ra-report.json": {
+      "kind": "json",
+      "path": "reports/ra-ngp.json"
+    },
+    "ra-report-games.csv": {
+      "kind": "csv",
+      "path": "reports/ra-ngp-games.csv"
+    },
+    "ra-report-missing.csv": {
+      "kind": "csv",
+      "path": "reports/ra-ngp-missing.csv"
+    }
+  },
+  "repo_tests": [
+    "tests/test_v4.py",
+    "tests/test_game_names.py"
+  ],
+  "remove_resources": [
+    "cart_schema.sql",
+    "cart_headers.py",
+    "cart_engine.py",
+    "cart_nointro.py",
+    "build_cart_db.py",
+    "update_cart_db.py",
+    "finalize_cart_db.py",
+    "tests_cart.py",
+    "storage-experiment"
+  ]
+}
